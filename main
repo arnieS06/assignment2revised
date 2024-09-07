@@ -1,1 +1,21 @@
+// Arnav Sharma, 9/6/24
+#include <iostream>
+using namespace std;
 
+int main() {
+    const int EARNINGS = 95000; // define what the total earnings are from the store
+    cout << "The earnings from this store are:\n $" << EARNINGS << endl; // output the earnings
+
+    double stateTax = 0.04 * EARNINGS; // show the state tax in terms of usd
+    double countyTax = 0.02 * EARNINGS; // do the same for county tax
+    double taxTotal = stateTax + countyTax; // calculate total tax
+
+    cout << "State tax for the earnings is:\n $" << stateTax << endl; // output the state tax in usd
+    cout << "County tax for the earnings is:\n $" << countyTax << endl; // do the same for county tax 
+    cout << "The total amount of tax paid on these earnings is:\n $" << taxTotal << endl; // output total tax paid in usd
+    cout << "The total profit that the store made is:\n $" << EARNINGS - taxTotal << endl; // output total profit
+    
+    return 0;
+
+
+}
